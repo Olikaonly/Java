@@ -1,0 +1,18 @@
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.VBox?>
+<VBox fx:controller="sample.Controller"
+         xmlns:fx="http://javafx.com/fxml" alignment="center">
+    <TextArea fx:id="mainTextArea" editable="false" VBox.vgrow="ALWAYS"></TextArea>
+    <HBox>
+    <TextField fx:id="mainTextField" HBox.hgrow="ALWAYS" maxWidth="Infinity"></TextField>
+    <Button onAction="#clickButton" HBox.hgrow="ALWAYS" maxWidth="Infinity" text="Send"></Button>
+</HBox>
+</VBox>
